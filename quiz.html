@@ -1,37 +1,129 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Quiz - Media Pembelajaran</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kuis Thaharah – 10 Soal</title>
+
+  <!-- CSS utama situs -->
+  <link rel="stylesheet" href="assets/style.css" />
 </head>
-<body>
-
-  <nav class="navbar">
-    <div class="logo">Belajar Sains</div>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="quiz.html" class="active">Quiz</a></li>
-      <li><a href="about.html">Tentang Kami</a></li>
-    </ul>
-  </nav>
-
-  <section class="quiz-section">
-    <div class="quiz-header">
-      <img src="assets/quiz.jpg" alt="Quiz Header">
-      <h2>Kuis Pengetahuan Sains</h2>
-      <p>Uji pemahaman kamu dengan menjawab pertanyaan berikut.</p>
+<body class="quiz-body">
+  <!-- ======== NAVBAR SAMA DENGAN INDEX ======== -->
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">Media Belajar Thaharah</h1>
+      <nav class="site-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="quiz.html" class="active">Quiz</a></li>
+          <li><a href="tentang.html">Tentang Kami</a></li>
+          <li><a href="materi.html">Materi</a></li>
+        </ul>
+      </nav>
     </div>
-    <div class="quiz">
-      <p id="question"></p>
-      <div id="choices"></div>
-      <button id="next">Jawab</button>
-      <p id="result"></p>
-    </div>
-  </section>
+  </header>
 
-  <footer>&copy; 2025 Media Pembelajaran Interaktif</footer>
-  <script src="script.js"></script>
+  <!-- ======== KONTEN KUIS ======== -->
+  <main class="quiz-content container">
+    <h2 class="quiz-title">Kuis Interaktif Bab Thaharah</h2>
+    <p class="quiz-intro">Jawab semua pertanyaan, lalu klik kirim untuk melihat nilai.</p>
+
+    <form id="quizForm">
+      <!-- ===== 10 SOAL ===== -->
+      <section class="question">
+        <h2>1. Apa arti kata Thaharah?</h2>
+        <label><input type="radio" name="q1" value="a"> Kebersihan</label><br>
+        <label><input type="radio" name="q1" value="b"> Kesucian</label><br>
+        <label><input type="radio" name="q1" value="c"> Keberkahan</label>
+      </section>
+
+
+      <section class="question">
+        <h2>2. Berapa rukun wudu yang wajib dilakukan?</h2>
+        <label><input type="radio" name="q2" value="a"> Empat</label><br>
+        <label><input type="radio" name="q2" value="b"> Enam</label><br>
+        <label><input type="radio" name="q2" value="c"> Tujuh</label>
+      </section>
+
+
+      <section class="question">
+        <h2>3. Apa pengganti wudu ketika tidak ada air?</h2>
+        <label><input type="radio" name="q3" value="a"> Tayammum</label><br>
+        <label><input type="radio" name="q3" value="b"> Mandi Wajib</label><br>
+        <label><input type="radio" name="q3" value="c"> Istinja’</label>
+      </section>
+
+
+      <section class="question">
+        <h2>4. Berapa minimal usapan saat istijmar?</h2>
+        <label><input type="radio" name="q4" value="a"> Dua kali</label><br>
+        <label><input type="radio" name="q4" value="b"> Tiga kali</label><br>
+        <label><input type="radio" name="q4" value="c"> Empat kali</label>
+      </section>
+
+
+      <section class="question">
+        <h2>5. Niat mandi wajib dilakukan kapan?</h2>
+        <label><input type="radio" name="q5" value="a"> Setelah mandi selesai</label><br>
+        <label><input type="radio" name="q5" value="b"> Saat air pertama menyentuh tubuh</label><br>
+        <label><input type="radio" name="q5" value="c"> Sebelum masuk kamar mandi</label>
+      </section>
+
+
+      <section class="question">
+        <h2>6. Yang bukan pembatal wudu adalah…</h2>
+        <label><input type="radio" name="q6" value="a"> Kentut</label><br>
+        <label><input type="radio" name="q6" value="b"> Bersentuhan dengan mahram</label><br>
+        <label><input type="radio" name="q6" value="c"> Tidur terbaring</label>
+      </section>
+
+
+      <section class="question">
+        <h2>7. Istinja’ dilakukan untuk membersihkan…</h2>
+        <label><input type="radio" name="q7" value="a"> Najis setelah buang hajat</label><br>
+        <label><input type="radio" name="q7" value="b"> Debu di wajah</label><br>
+        <label><input type="radio" name="q7" value="c"> Rambut yang rontok</label>
+      </section>
+
+
+      <section class="question">
+        <h2>8. Waktu tayammum hanya boleh dilakukan setelah…</h2>
+        <label><input type="radio" name="q8" value="a"> Waktu salat masuk</label><br>
+        <label><input type="radio" name="q8" value="b"> Terbenam matahari</label><br>
+        <label><input type="radio" name="q8" value="c"> Habis makan</label>
+      </section>
+
+
+      <section class="question">
+        <h2>9. Rukun tayammum berjumlah…</h2>
+        <label><input type="radio" name="q9" value="a"> Dua</label><br>
+        <label><input type="radio" name="q9" value="b"> Tiga</label><br>
+        <label><input type="radio" name="q9" value="c"> Empat</label>
+      </section>
+
+
+      <section class="question">
+        <h2>10. Air yang sah untuk wudu disebut…</h2>
+        <label><input type="radio" name="q10" value="a"> Air musta’mal</label><br>
+        <label><input type="radio" name="q10" value="b"> Air mutlak</label><br>
+        <label><input type="radio" name="q10" value="c"> Air keruh</label>
+      </section>
+
+      <button type="submit" class="btn-quiz">Kirim Jawaban</button>
+    </form>
+  </main>
+
+  <!-- ===== POPUP HASIL NILAI ===== -->
+  <div id="resultOverlay" class="overlay hidden">
+    <div class="overlay-box">
+      <h2>Hasil Kuis</h2>
+      <p id="resultText"></p>
+      <button id="closeOverlay" class="btn-quiz small">Tutup</button>
+    </div>
+  </div>
+
+  <!-- JS Utama -->
+  <script src="assets/script.js" defer></script>
 </body>
 </html>

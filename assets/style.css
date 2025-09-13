@@ -1,194 +1,129 @@
+/* ==========================
+   RESET & GLOBAL
+========================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background: #f7f7f7;
-    color: #333;
-    scroll-behavior: smooth;
-  }
-  
-  /* ==== NAVBAR ==== */
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #4cafef;
-    padding: 1rem 2rem;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-  }
-  .navbar .logo {
-    color: #fff;
-    font-weight: bold;
-    font-size: 1.3rem;
-  }
-  .navbar ul {
-    list-style: none;
-    display: flex;
-    gap: 1.5rem;
-  }
-  .navbar a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: 500;
-  }
-  .navbar a:hover { text-decoration: underline; }
-  
-  /* ==== HOME ==== */
-  .header-image {
-    position: relative;
-    max-height: 400px;
-    overflow: hidden;
-  }
-  .header-image img {
-    width: 100%;
-    display: block;
-  }
-  .header-text {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    color: #fff;
-    background: rgba(0,0,0,0.5);
-    padding: 1rem;
-    border-radius: 8px;
-  }
-  
-  .home-content {
-    max-width: 1000px;
-    margin: 2rem auto;
-    padding: 0 1rem;
-  }
-  .slider {
-    position: relative;
-    overflow: hidden;
-    border-radius: 12px;
-    margin-bottom: 1.5rem;
-  }
-  .slides {
-    display: flex;
-    transition: transform 0.5s ease;
-  }
-  .slides img { width: 100%; flex-shrink: 0; }
-  .prev, .next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(0,0,0,0.5);
-    color: #fff;
-    border: none;
-    font-size: 2rem;
-    padding: .3rem .8rem;
-    cursor: pointer;
-  }
-  .prev { left: 10px; }
-  .next { right: 10px; }
-  
-  .cta { text-align: center; }
-  .btn {
-    display: inline-block;
-    padding: 0.8rem 1.5rem;
-    background: #4cafef;
-    color: #fff;
-    border-radius: 8px;
-    text-decoration: none;
-    margin-top: 1rem;
-  }
-  .btn:hover { background: #3a9ed9; }
-  
-  .video-upload {
-    background: #fff;
-    max-width: 800px;
-    margin: 2rem auto;
-    padding: 2rem;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  }
-  #videoPlayer {
-    width: 100%;
-    margin-top: 1rem;
-    border-radius: 8px;
-  }
-  
-  /* ==== QUIZ ==== */
-  .quiz-section {
-    background: #fff;
-    max-width: 900px;
-    margin: 3rem auto;
-    padding: 2rem;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  }
-  .quiz-header img {
-    width: 100%;
-    border-radius: 12px;
-  }
-  .quiz label {
-    display: block;
-    margin: .5rem 0;
-  }
-  #next {
-    background: #4cafef;
-    color: #fff;
-    border: none;
-    padding: .7rem 1.2rem;
-    cursor: pointer;
-    border-radius: 8px;
-    margin-top: 1rem;
-  }
-  #result { font-weight: bold; margin-top: 1rem; color: #4caf50; }
-  
-  /* ==== ABOUT ==== */
-  .about {
-    max-width: 1000px;
-    margin: 3rem auto;
-    padding: 2rem;
-    background: #fff;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    text-align: center;
-  }
-  .about-logo img {
-    width: 150px;
-    margin-bottom: 1rem;
-  }
-  .team-gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(120px,1fr));
-    gap: 1rem;
-    margin-top: 2rem;
-  }
-  .team-gallery img {
-    width: 100%;
-    border-radius: 8px;
-  }
-  
-  /* ==== FOOTER ==== */
-  footer {
-    text-align: center;
-    padding: 1rem;
-    background: #4cafef;
-    color: #fff;
-    margin-top: 3rem;
-  }
-  
-  @media (max-width: 600px) {
-    .navbar ul { gap: 1rem; }
-    .btn { padding: 0.6rem 1rem; }
-  }
-  /* ... semua style sebelumnya ... */
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f6f6f6;
+  color: #222;
+  line-height: 1.6;
+}
 
-.intro-text {
-    max-width: 900px;
-    margin: 2rem auto;
-    padding: 0 1rem;
-    text-align: center;
-  }
-  
-  .navbar a.active {
-    text-decoration: underline;
-  }
-  /* ======= KUIS STYLING ======= */
+/* ==========================
+   HEADER & NAVBAR
+========================== */
+header {
+  background: linear-gradient(45deg,#ff7e00,#ffb347);
+  color: #fff;
+  padding: 20px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+header h1 {
+  font-size: 2rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+nav {
+  margin-top: 10px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: opacity .2s;
+}
+nav a:hover {
+  opacity: 0.8;
+}
+
+/* ==========================
+   SECTION / CONTAINER
+========================== */
+.container {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* Card grid (untuk pemilihan materi) */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 25px;
+}
+
+/* ==========================
+   CARD STYLE
+========================== */
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+  padding: 35px 20px;
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+.card h2 {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+  color: #ff7e00;
+}
+.card p {
+  font-size: 0.95em;
+  color: #444;
+  min-height: 60px;
+}
+
+/* CTA Button */
+.cta-btn {
+  display: inline-block;
+  margin-top: 18px;
+  padding: 12px 20px;
+  background: #ff7e00;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+.cta-btn:hover {
+  background: #e66a00;
+}
+
+/* ==========================
+   FOOTER
+========================== */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #ff7e00;
+  color: #fff;
+  margin-top: 40px;
+}
+
+/* ==========================
+   UTILITIES
+========================== */
+.text-center { text-align: center; }
+.mt-2 { margin-top: 0.5rem; }
+.mt-4 { margin-top: 1rem; }
+/* ======= KUIS STYLING ======= */
 
 /* Latar halaman kuis */
 .quiz-body {

@@ -1,75 +1,89 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Home - Media Pembelajaran Thoharoh</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home – Media Pembelajaran Thoharoh</title>
+
+  <!-- Font & CSS utama -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
 
-  <!-- Navbar -->
-  <nav class="navbar">
-    <div class="logo">Belajar Thoharoh</div>
-    <ul>
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="quiz.html">Quiz</a></li>
-      <li><a href="about.html">Tentang Kami</a></li>
-    </ul>
-  </nav>
+  <!-- ===== NAVBAR ===== -->
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">Belajar Thoharoh</h1>
+      <nav class="site-nav">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="materi.html">Materi</a></li>
+          <li><a href="quiz.html">Quiz</a></li>
+          <li><a href="about.html">Tentang Kami</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-  <!-- Header image -->
-  <section class="header-image">
-    <img src="assets/header.jpg" alt="Header">
+  <!-- ===== HERO IMAGE ===== -->
+  <section class="hero-image">
+    <img src="assets/header.jpg" alt="Ilustrasi Bab Thoharoh" />
   </section>
 
-  <!-- Kata Sambutan -->
-  <section class="intro-text">
-    <h1>Selamat Datang di Media Pembelajaran Bab Thoharoh</h1>
+  <!-- ===== INTRO / KATA SAMBUTAN ===== -->
+  <section class="intro container">
+    <h2>Selamat Datang di Media Pembelajaran Bab Thoharoh</h2>
     <p>
-      Website ini dibuat untuk memenuhi tugas TIK Pendidikan atas bimbingan dan arahan dari
-      Dosen pengampu kami yaitu <strong>Bapak Dr. M. Naelul Mubarok, M.M</strong>.
+      Website ini dibuat untuk memenuhi tugas TIK Pendidikan atas bimbingan dan arahan
+      dari Dosen pengampu kami yaitu <strong>Bapak Dr. M. Naelul Mubarok, M.M</strong>.
     </p>
     <p>
-      Media pembelajaran interaktif ini dirancang sebagai platform digital untuk mendukung proses belajar
-      mengajar agar lebih menarik, menyenangkan, dan mudah dipahami. Dengan memanfaatkan teknologi,
-      materi disajikan secara interaktif sehingga mampu meningkatkan minat belajar dan pemahaman siswa.
+      Media pembelajaran interaktif ini dirancang sebagai platform digital untuk
+      mendukung proses belajar mengajar agar lebih menarik, menyenangkan, dan mudah
+      dipahami. Materi disajikan secara interaktif sehingga mampu meningkatkan minat
+      belajar dan pemahaman siswa.
     </p>
     <p>
-      Pada platform ini kami mengangkat <strong>tema pembelajaran Bab Thoharoh</strong> sebagai fokus utama,
-      khususnya untuk jenjang Sekolah Dasar (SD). Materi disusun secara bertahap dalam bentuk visual yang
-      menarik dan latihan interaktif yang ramah anak. Dengan pendekatan yang menyenangkan,
-      siswa SD dapat mempelajari konsep thoharoh—mulai dari pengertian, tata cara bersuci,
-      hingga praktik wudhu dan mandi wajib—dengan cara yang mudah diingat.
+      Pada platform ini kami mengangkat <strong>tema pembelajaran Bab Thoharoh</strong>
+      sebagai fokus utama, khususnya untuk jenjang Sekolah Dasar (SD). Materi disusun
+      secara bertahap dalam bentuk visual yang menarik dan latihan interaktif yang ramah
+      anak. Dengan pendekatan yang menyenangkan, siswa SD dapat mempelajari konsep
+      thoharoh—mulai dari pengertian, tata cara bersuci, hingga praktik wudhu dan mandi
+      wajib—dengan cara yang mudah diingat.
     </p>
   </section>
 
-  <!-- Slider + CTA -->
-  <section class="home-content">
+  <!-- ===== SLIDER + CTA ===== -->
+  <section class="home-content container">
     <div class="slider">
       <div class="slides">
-        <img src="assets/slide1.jpg" alt="Slide 1">
-        <img src="assets/slide2.jpg" alt="Slide 2">
-        <img src="assets/slide3.jpg" alt="Slide 3">
+        <img src="assets/slide1.jpg" alt="Slide 1" />
+        <img src="assets/slide2.jpg" alt="Slide 2" />
+        <img src="assets/slide3.jpg" alt="Slide 3" />
       </div>
       <button class="prev">&#10094;</button>
       <button class="next">&#10095;</button>
     </div>
 
-    <div class="cta">
+    <div class="cta-box">
       <p>Siap belajar Bab Thoharoh secara interaktif? Ayo mulai sekarang!</p>
-      <a href="quiz.html" class="btn">Mulai Kuis</a>
+      <a href="quiz.html" class="btn-cta">Mulai Kuis</a>
     </div>
   </section>
 
-  <!-- Video Pembelajaran (fixed) -->
-  <section class="video-section">
+  <!-- ===== VIDEO ===== -->
+  <section class="video-section container">
     <h2>Video Pembelajaran</h2>
     <p>Tonton materi Bab Thoharoh berikut:</p>
     <video src="assets/thoharoh.mp4" controls width="720"></video>
   </section>
 
-  <footer>&copy; 2025 Media Pembelajaran Bab Thoharoh</footer>
-  <script src="script.js"></script>
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    &copy; 2025 Media Pembelajaran Bab Thoharoh
+  </footer>
+
+  <script src="assets/script.js" defer></script>
 </body>
 </html>

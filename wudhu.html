@@ -4,17 +4,159 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Panduan Lengkap Wudu dalam Fikih Thaharah – Fathul Qarib</title>
-  <meta name="description" content="Pelajari tata cara wudu: rukun, syarat, sunah, dan pembatalnya sesuai tuntunan fikih dalam kitab Fathul Qarib." />
-  <!-- SEO tambahan -->
+  <meta name="description" content="Pelajari tata cara wudu: rukun, syarat, sunah, dan pembatalnya sesuai tuntunan fikih dalam kitab Fathul Qarib.">
   <meta name="keywords" content="wudu, rukun wudu, sunah wudu, cara wudu yang benar, hal yang membatalkan wudu, thaharah, fathul qarib">
-  <link rel="stylesheet" href="style.css" /> <!-- opsional -->
+
+  <!-- ===== CSS LANGSUNG ===== -->
+  <style>
+    /* --- GLOBAL --- */
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      line-height: 1.6;
+      background: #fafafa;
+      color: #333;
+    }
+    h1, h2 { color: #0a4a3f; }
+    main {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+
+    /* --- NAVBAR --- */
+    .navbar {
+      background: #0a4a3f;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.75rem 1.5rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .logo {
+      color: #fff;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+    .nav-links {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 1.2rem;
+    }
+    .nav-links li a {
+      color: #fff;
+      text-decoration: none;
+      padding: 6px 10px;
+      border-radius: 4px;
+      transition: background 0.3s;
+    }
+    .nav-links li a:hover,
+    .nav-links li a.active {
+      background: #09745e;
+    }
+
+    /* --- HERO --- */
+    .hero {
+      position: relative;
+      text-align: center;
+      overflow: hidden;
+    }
+    .hero-img {
+      width: 100%;
+      height: 320px;
+      object-fit: cover;
+      display: block;
+    }
+    .hero-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      text-shadow: 0 2px 6px rgba(0,0,0,0.5);
+    }
+    .cta-button {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 10px 20px;
+      background: #0a4a3f;
+      color: #fff;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    .cta-button:hover {
+      background: #09745e;
+    }
+
+    /* --- ARTICLE --- */
+    article img {
+      width: 100%;
+      max-width: 600px;
+      display: block;
+      margin: 1rem auto;
+      border-radius: 8px;
+    }
+    figure { text-align: center; margin: 1.5rem 0; }
+    figcaption { font-size: 0.9rem; color: #666; }
+
+    ol, ul { padding-left: 1.5rem; }
+    .ringkasan {
+      background: #e9f8f4;
+      padding: 1.5rem;
+      margin-top: 2rem;
+      border-radius: 8px;
+    }
+    .cta {
+      text-align: center;
+      margin-top: 2.5rem;
+    }
+    .cta p {
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+
+    footer {
+      background: #0a4a3f;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+    }
+
+    /* --- RESPONSIVE --- */
+    @media (max-width: 600px) {
+      .hero-img { height: 220px; }
+      .hero-content h1 { font-size: 1.4rem; }
+      .nav-links { flex-direction: column; gap: 0.5rem; }
+    }
+  </style>
 </head>
+
 <body>
 
-  <!-- ===== HERO SECTION ===== -->
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <div class="logo">Belajar Thoharoh</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="quiz.html">Quiz</a></li>
+      <li><a href="about.html">Tentang Kami</a></li>
+      <li><a href="pembagian-air-thaharah.html">Artikel</a></li>
+      <li><a href="tayammum.html">Tayammum</a></li>
+      <li><a href="wudu.html" class="active">Wudu</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== HERO ===== -->
   <header class="hero">
-    <img src="assets/img/wudu-panduan-thaharah.jpg" 
-         alt="Ilustrasi wudu sesuai tuntunan Fathul Qarib" class="hero-img">
+    <img src="assets/img/wudu-panduan-thaharah.jpg"
+         alt="Ilustrasi wudu sesuai tuntunan Fathul Qarib"
+         class="hero-img">
     <div class="hero-content">
       <h1>Wudu: Syarat Sah Salat</h1>
       <a href="#panduan" class="cta-button">Pelajari Tata Caranya</a>
@@ -27,20 +169,20 @@
 
       <section>
         <h2>Apa Itu Wudu?</h2>
-        <p><strong>Wudu</strong> adalah ibadah bersuci yang menjadi <strong>syarat sah salat</strong>. 
+        <p><strong>Wudu</strong> adalah ibadah bersuci yang menjadi <strong>syarat sah salat</strong>.
            Jika wudu tidak sah, maka salat pun tidak sah.</p>
       </section>
 
       <section>
         <h2>Rukun Wudu (Wajib Dilakukan)</h2>
-        <p>Rukun adalah bagian pokok yang <strong>harus</strong> dikerjakan agar wudu sah. Ada <strong>6 rukun</strong>:</p>
+        <p>Ada <strong>6 rukun</strong> wudu yang wajib dipenuhi agar sah:</p>
         <ol>
           <li><strong>Niat</strong> – Berniat wudu ketika mulai membasuh wajah.</li>
           <li><strong>Membasuh Wajah</strong> – Dari tempat tumbuh rambut sampai dagu, dan telinga kanan ke kiri.</li>
-          <li><strong>Membasuh Kedua Tangan hingga Siku</strong> – Termasuk jari-jari.</li>
+          <li><strong>Membasuh Kedua Tangan hingga Siku</strong>.</li>
           <li><strong>Mengusap Sebagian Kepala</strong> – Minimal tiga helai rambut.</li>
-          <li><strong>Membasuh Kedua Kaki hingga Mata Kaki</strong> – Termasuk sela-sela jari.</li>
-          <li><strong>Tertib</strong> – Dilakukan berurutan sesuai urutan di atas.</li>
+          <li><strong>Membasuh Kedua Kaki hingga Mata Kaki</strong>.</li>
+          <li><strong>Tertib</strong> – Dilakukan berurutan.</li>
         </ol>
         <figure>
           <img src="assets/img/rukun-wudu.jpg" alt="Membasuh wajah saat wudu">
@@ -54,7 +196,7 @@
           <li>Menggunakan Air Suci dan Mensucikan (<em>air mutlak</em>).</li>
           <li>Menghilangkan Najis sebelum berwudu.</li>
           <li>Tidak Ada Penghalang Air seperti cat, kuteks, atau lilin.</li>
-          <li><em>Tamyiz</em> – Orang yang berwudu sudah bisa membedakan baik dan buruk (sekitar usia 7 tahun).</li>
+          <li><em>Tamyiz</em> – Sudah bisa membedakan baik dan buruk (sekitar usia 7 tahun).</li>
         </ul>
       </section>
 
@@ -78,10 +220,10 @@
       <section>
         <h2>Hal yang Membatalkan Wudu</h2>
         <ol>
-          <li>Keluar Sesuatu dari Dua Jalan – seperti kencing, buang air besar, atau kentut.</li>
-          <li>Tidur Tidak Kokoh – Tidur bersandar atau terbaring.</li>
+          <li>Keluar Sesuatu dari Dua Jalan – kencing, buang air besar, kentut.</li>
+          <li>Tidur Tidak Kokoh – Bersandar atau terbaring.</li>
           <li>Hilang Akal – Pingsan, mabuk, atau gila.</li>
-          <li>Bersentuhan Kulit dengan Lawan Jenis yang bukan mahram tanpa penghalang.</li>
+          <li>Bersentuhan Kulit dengan Lawan Jenis bukan mahram tanpa penghalang.</li>
           <li>Menyentuh Kemaluan atau Dubur dengan telapak tangan bagian dalam.</li>
         </ol>
         <figure>
@@ -94,18 +236,21 @@
         <h2>Ringkasan Praktis</h2>
         <ul>
           <li><strong>Lakukan enam rukun wudu</strong> secara tertib.</li>
-          <li>Pastikan <strong>air mutlak</strong> dan tidak ada penghalang ke kulit.</li>
-          <li>Jaga wudu dari hal-hal yang membatalkannya untuk memastikan salat sah.</li>
+          <li>Gunakan <strong>air mutlak</strong> dan pastikan tidak ada penghalang ke kulit.</li>
+          <li>Jaga wudu dari hal-hal yang membatalkannya agar salat sah.</li>
         </ul>
       </section>
 
       <section class="cta">
-        <p><strong>Jaga kesucian, sempurnakan ibadah. Lanjutkan belajar ke panduan Tayamum untuk kondisi tanpa air.</strong></p>
-        <a href="/tayamum.html" class="cta-button">Pelajari Tayamum →</a>
+        <p><strong>Jaga kesucian, sempurnakan ibadah. Lanjutkan belajar ke panduan Tayammum untuk kondisi tanpa air.</strong></p>
+        <a href="tayammum.html" class="cta-button">Pelajari Tayammum →</a>
       </section>
 
     </article>
   </main>
 
+  <footer>
+    &copy; 2025 Media Pembelajaran Bab Thoharoh
+  </footer>
 </body>
 </html>

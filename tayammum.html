@@ -6,9 +6,172 @@
   <title>Panduan Lengkap Tayammum: Cara Bersuci Tanpa Air Menurut Fikih Thaharah</title>
   <meta name="description" content="Ketahui syarat, rukun, dan tata cara tayammum—pengganti wudu atau mandi wajib—berdasarkan tuntunan fikih kitab Fathul Qarib.">
   <meta name="keywords" content="tayammum, cara tayammum, rukun tayammum, syarat tayammum, panduan tayammum, thaharah">
-  <link rel="stylesheet" href="style.css"><!-- opsional: styling tambahan -->
+
+  <!-- ======= CSS LANGSUNG ======= -->
+  <style>
+    /* ==== GLOBAL ==== */
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      background: #fafafa;
+      color: #333;
+    }
+    h1, h2 {
+      color: #0a4a3f;
+    }
+    main {
+      padding: 2rem 1rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    /* ==== NAVBAR ==== */
+    .navbar {
+      background: #0a4a3f;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.75rem 1.5rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .logo {
+      color: #fff;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+    .nav-links {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 1.2rem;
+    }
+    .nav-links li a {
+      color: #fff;
+      text-decoration: none;
+      padding: 6px 10px;
+      border-radius: 4px;
+      transition: background 0.3s;
+    }
+    .nav-links li a:hover,
+    .nav-links li a.active {
+      background: #09745e;
+    }
+
+    /* ==== HERO ==== */
+    .hero {
+      position: relative;
+      text-align: center;
+      overflow: hidden;
+    }
+    .hero-img {
+      width: 100%;
+      height: 320px;
+      object-fit: cover;
+      display: block;
+    }
+    .hero-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      text-shadow: 0 2px 6px rgba(0,0,0,0.5);
+    }
+    .cta-button {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 10px 20px;
+      background: #0a4a3f;
+      color: #fff;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    .cta-button:hover {
+      background: #09745e;
+    }
+
+    /* ==== ARTICLE ==== */
+    article img {
+      width: 100%;
+      max-width: 600px;
+      display: block;
+      margin: 1rem auto;
+      border-radius: 8px;
+    }
+    figure {
+      margin: 1.5rem 0;
+      text-align: center;
+    }
+    figcaption {
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    ol, ul {
+      padding-left: 1.5rem;
+    }
+    blockquote {
+      background: #eef7f6;
+      border-left: 4px solid #0a4a3f;
+      margin: 1.5rem 0;
+      padding: 1rem;
+      font-style: italic;
+    }
+
+    .ringkasan {
+      background: #e9f8f4;
+      padding: 1.5rem;
+      margin-top: 2rem;
+      border-radius: 8px;
+    }
+    .ringkasan ul {
+      margin: 0;
+    }
+
+    .cta {
+      text-align: center;
+      margin-top: 2.5rem;
+    }
+    .cta p {
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+
+    footer {
+      background: #0a4a3f;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+    }
+
+    /* ==== RESPONSIVE ==== */
+    @media (max-width: 600px) {
+      .hero-img { height: 220px; }
+      .hero-content h1 { font-size: 1.4rem; }
+      .nav-links { flex-direction: column; gap: 0.5rem; }
+    }
+  </style>
 </head>
+
 <body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <div class="logo">Belajar Thoharoh</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="quiz.html">Quiz</a></li>
+      <li><a href="about.html">Tentang Kami</a></li>
+      <li><a href="pembagian-air-thaharah.html">Artikel</a></li>
+      <li><a href="tayammum.html" class="active">Tayammum</a></li>
+    </ul>
+  </nav>
 
   <!-- ===== HERO SECTION ===== -->
   <header class="hero">
@@ -25,17 +188,14 @@
     <article>
       <h1>Panduan Lengkap Tayammum: Cara Bersuci Tanpa Air Menurut Fikih Thaharah</h1>
 
-      <!-- APA ITU TAYAMMUM -->
       <section>
         <h2>Apa Itu Tayammum?</h2>
         <p><strong>Tayammum</strong> adalah cara bersuci dengan <strong>debu suci</strong> sebagai pengganti <strong>wudu</strong> atau <strong>mandi wajib</strong>.
            Praktik ini dilakukan bila air tidak tersedia atau penggunaannya membahayakan.</p>
       </section>
 
-      <!-- SYARAT SAH -->
       <section>
         <h2>Syarat Sah Tayammum</h2>
-        <p>Tayammum hanya sah bila memenuhi syarat berikut:</p>
         <ol>
           <li><strong>Tidak Ada Air</strong> – Air tidak ditemukan atau tidak cukup untuk wudu/mandi.</li>
           <li><strong>Tidak Bisa Menggunakan Air</strong> karena:
@@ -54,10 +214,8 @@
         </figure>
       </section>
 
-      <!-- RUKUN -->
       <section>
         <h2>Rukun Tayammum</h2>
-        <p>Rukun adalah bagian wajib yang harus dilakukan:</p>
         <ol>
           <li><strong>Niat</strong> – Dalam hati saat menepukkan tangan ke debu pertama.</li>
           <li><strong>Mengusap Wajah</strong> – Seluruh wajah diusap debu.</li>
@@ -66,10 +224,8 @@
         </ol>
       </section>
 
-      <!-- CARA TAYAMMUM -->
       <section>
         <h2>Cara Tayammum yang Benar</h2>
-        <p>Ikuti langkah berikut:</p>
         <ol>
           <li><strong>Niat</strong>: Niat tayammum sebagai pengganti wudu/mandi.</li>
           <li><strong>Tepuk Tangan Pertama</strong>: Tepukkan telapak tangan ke debu suci.</li>
@@ -86,7 +242,6 @@
         </figure>
       </section>
 
-      <!-- RINGKASAN -->
       <section class="ringkasan">
         <h2>Ringkasan Praktis</h2>
         <ul>
@@ -96,14 +251,16 @@
         </ul>
       </section>
 
-      <!-- CTA -->
       <section class="cta">
         <p><strong>Tidak ada air? Ibadah tetap sah dengan tayammum.</strong></p>
-        <a href="/wudu.html" class="cta-button">Pelajari Panduan Wudu →</a>
+        <a href="wudhu.html" class="cta-button">Pelajari Panduan Wudu →</a>
       </section>
-
     </article>
   </main>
+
+  <footer>
+    &copy; 2025 Media Pembelajaran Bab Thoharoh
+  </footer>
 
 </body>
 </html>

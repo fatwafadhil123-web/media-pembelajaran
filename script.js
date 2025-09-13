@@ -58,3 +58,47 @@ if (qEl) {
     }
   };
 }
+document.addEventListener('DOMContentLoaded', () => {
+  const quizForm = document.getElementById('quizForm');
+  const overlay   = document.getElementById('resultOverlay');
+  const resultTxt = document.getElementById('resultText');
+  const closeBtn  = document.getElementById('closeOverlay');
+
+  if (!quizForm) return;
+
+  quizForm.addEventListener('submit', function (e) {
+    e.preventDefault();
+    let score = 0;
+
+    // ===== Kunci Jawaban =====
+    const kunci = {
+      q1: 'b',
+      q2: 'b',
+      q3: 'a',
+      q4: 'b',
+      q5: 'b',
+      q6: 'b', // hanya bersentuhan dengan mahram yang TIDAK batal
+      q7: 'a',
+      q8: 'a',
+      q9: 'c',
+      q10: 'b'
+
+    };
+
+    Object.keys(kunci).forEach(k => {
+      if (quizForm[k] && quizForm[k].value === kunci[k]) score++;
+    });
+
+    const total = Object.keys(kunci).length;
+    const persen = Math.round((score / total) * 100);
+
+    // Tampilkan ke overlay
+    resultTxt.textContent = `Nilai kamu: ${score} dari ${total} (${persen}%)`;
+    overlay.classList.remove('hidden');
+  });
+
+  // Tombol tutup popup
+  closeBtn.addEventListener('click', () => {
+    overlay.classList.add('hidden');
+  });
+});
