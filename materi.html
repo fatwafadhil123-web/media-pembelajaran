@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pemilihan Materi – Media Pembelajaran Digital</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f6f6f6;
+    }
+    header {
+      background: linear-gradient(45deg,#ff7e00,#ffb347);
+      padding: 25px 15px;
+      text-align: center;
+      color: #fff;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.2em;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    header p {
+      margin-top: 8px;
+      font-size: 1rem;
+    }
+    .materi-container {
+      max-width: 1100px;
+      margin: 40px auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 25px;
+      padding: 0 20px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
+      padding: 35px 20px;
+      transition: transform 0.25s, box-shadow 0.25s;
+    }
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    }
+    .card h2 {
+      font-size: 1.4em;
+      margin-bottom: 10px;
+      color: #ff7e00;
+    }
+    .card p {
+      font-size: 0.95em;
+      color: #444;
+      min-height: 60px;
+    }
+    .cta-btn {
+      display: inline-block;
+      margin-top: 18px;
+      padding: 12px 20px;
+      background: #ff7e00;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background 0.2s;
+    }
+    .cta-btn:hover {
+      background: #e66a00;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #ff7e00;
+      color: #fff;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Pemilihan Materi</h1>
+    <p>Pilih bab pembelajaran Bahasa Arab yang ingin dipelajari</p>
+  </header>
+
+  <section class="materi-container">
+    <div class="card">
+      <h2>Bab 1 – Thaharah</h2>
+      <p>Pengenalan bersuci: wudu, mandi wajib, tayammum.</p>
+      <a class="cta-btn" href="bab1-thaharah.html">Buka Materi</a>
+    </div>
+
+    <div class="card">
+      <h2>Bab 2 – Salam & Perkenalan</h2>
+      <p>Kosakata salam, sapaan, dan percakapan perkenalan dasar.</p>
+      <a class="cta-btn" href="bab2-salam.html">Buka Materi</a>
+    </div>
+
+    <div class="card">
+      <h2>Bab 3 – Anggota Tubuh</h2>
+      <p>Nama-nama anggota tubuh dan latihan interaktif.</p>
+      <a class="cta-btn" href="bab3-tubuh.html">Buka Materi</a>
+    </div>
+
+    <div class="card">
+      <h2>Bab 4 – Angka & Bilangan</h2>
+      <p>Pembelajaran angka 1–10 beserta contoh penggunaannya.</p>
+      <a class="cta-btn" href="bab4-angka.html">Buka Materi</a>
+    </div>
+
+    <div class="card">
+      <h2>Bab 5 – Warna & Benda Sekitar</h2>
+      <p>Mengenal warna dan benda sehari-hari dalam Bahasa Arab.</p>
+      <a class="cta-btn" href="bab5-warna.html">Buka Materi</a>
+    </div>
+
+    <div class="card">
+      <h2>Bab 6 – Kegiatan Sehari-hari</h2>
+      <p>Belajar kata kerja umum dan aktivitas harian.</p>
+      <a class="cta-btn" href="bab6-aktivitas.html">Buka Materi</a>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Media Pembelajaran Digital
+  </footer>
+
+</body>
+</html>
